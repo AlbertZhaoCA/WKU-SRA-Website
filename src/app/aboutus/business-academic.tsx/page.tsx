@@ -10,7 +10,6 @@ import {
     TextRevealCardTitle,
 } from "@/components/ui/text-reveal-card";
 import { Boxes } from '@/components/ui/background-box';
-import { Box } from 'lucide-react';
 
 export default function Page() {
     return (
