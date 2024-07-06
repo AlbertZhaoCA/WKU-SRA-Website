@@ -1,38 +1,10 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+import AssociationIntro from "@/components/AssociationIntro";
 
 export default function AboutUs() {
   return (
-    <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {content.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
-
-            <p>
-              {item.title}
-            </p>
-
-            <div className="text-sm  prose prose-sm dark:prose-invert">
-              {item?.image && (
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
-                />
-              )}
-              {item.description}
-            </div>
-          </div>
-        ))}
-      </div>
-    </TracingBeam>
+    <AssociationIntro />
   );
 }
 
@@ -56,23 +28,6 @@ const content = [
     ),
     badge: " SCIENCE AND RESEARCH ASSOCIATION",
     image: "/activity-research-hometown.jpg"
-  },
-  {
-    title: "招新",
-    description: (
-      <>
-        <p>
-          温州肯恩大学科学研究协会（科协）近日在温州山根小镇轰趴馆成功举办了一场别开生面的破冰活动。这次活动旨在为新老会员提供一个轻松愉快的交流平台，增进彼此之间的了解和友谊。
-        </p>
-        <p>在温馨且活力四射的轰趴馆中，科协会员们通过参与各种互动游戏和团队建设活动，迅速拉近了距离。现场欢声笑语不断，大家不仅享受了美味的餐点和饮品，还通过互动游戏和团队挑战，增强了团队合作精神和凝聚力。
-          本次活动的成功举办不仅加强了会员之间的联系，也为科协注入了新的活力。我们相信，通过这样的活动，科协将继续在科学研究和学术交流领域发挥重要作用。
-          科协感谢所有支持和参与此次活动的朋友们，并期待在未来的活动中与更多热爱科学和研究的朋友们相聚，共同推动学术进步和创新发展。
-        </p>
-      </>
-    ),
-    badge: "2022 9 月 21 日",
-    image:
-      "/first-day-at-rsa.jpg"
   },
 
 ];

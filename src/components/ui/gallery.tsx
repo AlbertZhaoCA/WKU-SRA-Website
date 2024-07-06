@@ -30,9 +30,12 @@ function BadgeList(params: GalleryProps) {
 
 function BigGrid(params: GalleryProps) {
     return (
-        <div className="flex flex-col items-center justify-center h-full">
-
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center sm:justify-center items-center h-full">
+            {params.url.map((url, index) => (
+                <a key={index} href={params?.href?.[index] ?? '#'} className="flex justify-center items-center">
+                    <img src={url} alt={params.imageTitles?.[index]} className={`object-cover w-${params.action.width} h-${params.action.width}`}/>
+                </a>
+            ))}
         </div>
     );
-
 }
