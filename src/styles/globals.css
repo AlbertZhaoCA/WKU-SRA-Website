@@ -84,3 +84,23 @@
       @apply px-4 py-2 rounded-md;
     }
   }
+
+   /*
+    * used for solving the issue in some browsers that doesn't support background-clip: text
+    * aiming to solve the issuse located ate @/src/app/page
+    */
+  .fallback-text-color {
+    color: #666; 
+  }
+   /*
+    * used for solving the issue in some browsers that doesn't support background-clip: text
+    * aiming to solve the issuse located ate @/src/app/page
+    */
+  @supports (-webkit-background-clip: text) or (background-clip: text) {
+    .fallback-text-color {
+      background: linear-gradient(to bottom, #fcfcfc, #39414d); 
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; 
+    }
+  }
