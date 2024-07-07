@@ -2,11 +2,10 @@ import "@/styles/globals.css"
 import { Inter as FontSans } from "next/font/google"
 import { Metadata } from "next"
 import { RootLayoutProps } from "@/utils/type"
-import { NavigationBar } from "@/components/Nav"
-import Footer from "@/components/Footer"
+import { NavigationBar } from "./_components/Nav"
+import Footer from "./_components/Footer"
 import { cn } from "@/lib/utils"
-import HeaderLogo from "@/components/HeaderLogo"
-
+import HeaderLogo from "./_components/HeaderLogo"
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sanxs",
@@ -19,11 +18,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning >
       <head />
       <body
         className={cn(
-          "flex flex-col  min-h-screen bg-background font-sans antialiased",
+          "flex flex-col min-w-96 min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >

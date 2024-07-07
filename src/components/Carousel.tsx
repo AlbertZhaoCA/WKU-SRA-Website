@@ -2,16 +2,16 @@ import * as React from "react"
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
-  Carousel,
+  Carousel as CarouselComponent,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-export default function CarouselDemo() {
+export default function Carousel() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <CarouselComponent className="w-full max-w-xs">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
@@ -27,7 +27,7 @@ export default function CarouselDemo() {
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
-    </Carousel>
+    </CarouselComponent>
   )
 }
 

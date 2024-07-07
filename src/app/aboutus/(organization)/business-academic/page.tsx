@@ -14,7 +14,7 @@ import { Boxes } from '@/components/ui/background-box';
 export default function Page() {
     return (
 
-        <main className="min-h-screen z-0 relative w-full overflow-hidden bg-slate-800 flex flex-col items-center rounded-lg ">
+        <main className="min-h-screen z-0 relative w-full overflow-hidden bg-slate-800 flex flex-col items-center  ">
             <Boxes />
             <div className="flex flex-col md:items-baseline items-center md:flex-row  justify-around mx-auto px-10 py-12">
                 <BackgroundGradient className="rounded-[22px]  max-w-sm p-2 md:p-1 sm:p-5 bg-white dark:bg-zinc-900">

@@ -1,5 +1,5 @@
 import { GalleryProps } from "@/utils/type";
-import Gallery from "./ui/gallery";
+import Gallery from "../../components/ui/gallery";
 
 const galleryData:GalleryProps = {
     url: [
