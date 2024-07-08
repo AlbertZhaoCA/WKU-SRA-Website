@@ -1,4 +1,15 @@
-export default function HeavyProfile() {
+import { ContactInfo } from "@/utils/types";
+
+export default function HeavyProfile({
+name, majorInfo, contactInfo, researchInterests, projects,url
+}:{
+    name: string,
+    url: string,
+    majorInfo?: [string, string],
+    contactInfo: ContactInfo[],
+    researchInterests: string[],
+    projects: string[]
+}) {
     return (
         <section className="w-full overflow-hidden dark:bg-gray-900">
             <div className="w-full mx-auto">
@@ -6,18 +17,18 @@ export default function HeavyProfile() {
                 <header className="px-2 py-4 mt-16 flex flex-col justify-center items-center text-center mb-32">
                     <img className="inline-flex object-cover border-4 border-indigo-600 rounded-full shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 bg-indigo-50 text-indigo-600 h-24 w-24 !h-48 !w-48" src="https://i.pinimg.com/originals/71/57/ae/7157ae2d6d9c27891dae72235e7b56df.jpg" alt="头像" />
                     <h1 className="text-2xl text-gray-500 font-bold mt-2">
-                        赵钦鉴
+                        {name}
                     </h1>
                     <h2 className="text-base md:text-xl text-gray-500 font-bold">
-                        大三计算机@
+                        {majorInfo && `${majorInfo?.[0]} @` }
                         <a href="" target="_blank"
                             className="text-indigo-900 hover:text-indigo-600 font-bold border-b-0 hover:border-b-4 hover:border-b-indigo-300 transition-all mb-2">
-                            WKU
+                            {majorInfo?.[1]}
                         </a>
                     </h2>
                     <ul className="flex flex-row mt-2">
                         <li className="mx-2">
-                            <a href="" target="_blank" aria-label="GitHub">
+                            <a href={url??'/'} target="_blank" aria-label="GitHub">
                                 <svg className="h-6 text-indigo-700 hover:text-indigo-300" fill="currentColor" role="img" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub</title>

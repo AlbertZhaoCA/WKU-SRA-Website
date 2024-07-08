@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import { Inter as FontSans } from "next/font/google"
 import { Metadata } from "next"
-import { RootLayoutProps } from "@/utils/type"
+import { RootLayoutProps } from "@/utils/types"
 import { NavigationBar } from "./_components/Nav"
 import Footer from "./_components/Footer"
 import { cn } from "@/lib/utils"
