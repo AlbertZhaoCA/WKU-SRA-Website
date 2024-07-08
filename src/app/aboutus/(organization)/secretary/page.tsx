@@ -2,6 +2,9 @@
 import LightProfile from "@/components/ui/light-profile";
 import avatarImg from "./_datas/avatar.png";
 import { useState } from 'react';
+import Modal from "@/components/ui/pop-up-pic-modal";
+import contact from "./_datas/contact.jpg";
+import svgArray from "./_datas/svg";
 
 //it is a bad code cause I used this logic also in other pages, rewrite when I have time (strange to use I, and I also do not 
 //know is it a good idea to write comment like
@@ -13,7 +16,7 @@ export default function Page() {
       };
     
 return (<div>
-    <LightProfile avatar={avatarImg} person={{ name: "余益多", intro: "27级 计算机科学与技术", contact: "WeChat: imyyid", }} />
+    <LightProfile onChildClick={handleChildClick} avatar={avatarImg} person={{ name: "余益多", intro: "27级 计算机科学与技术", contact: "WeChat: imyyid",media:svgArray }} />
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
     <p className="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">欢迎来到
         <span className="border-b border-dotted border-slate-300">秘书部</span>
@@ -32,6 +35,9 @@ return (<div>
         <span className="inline-block">管理协会的日常行政事务,包括会议记录、文件管理、绩效考核、活动签到和内部沟通，以及大型活动物品采购及报销记账等事物</span>
         <span className="inline-block"></span>
     </p>
+    {
+    clicked ? <Modal isOpen={clicked} setOpen={handleChildClick} imageUrl={contact.src} /> : null
+    }
 
 
 </div>

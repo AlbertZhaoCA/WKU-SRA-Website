@@ -6,6 +6,7 @@ import { NavigationBar } from "./_components/Nav"
 import Footer from "./_components/Footer"
 import { cn } from "@/lib/utils"
 import HeaderLogo from "./_components/HeaderLogo"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sanxs",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
+        <SpeedInsights/>
         <header >
           <HeaderLogo/>
           <NavigationBar />
