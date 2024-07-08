@@ -3,7 +3,7 @@ import Modal from "@/components/ui/pop-up-pic-modal"
 export default function Intro() {
     return(
     <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-10 mb-10">
-        <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">📣 宣传与传播</h2>
+        <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">📨 沟通与交流</h2>
         <p className="mb-12 text-lg text-gray-500">欢迎加入科技科研协会公关部，开启你的沟通与交流之旅！
 
         </p>
