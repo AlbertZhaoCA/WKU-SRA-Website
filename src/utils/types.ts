@@ -30,7 +30,7 @@ type GalleryType = "bigGrid"| "badgeList";
 export type ContactInfo = {
     name: string;
     url: string;
-    svg: string;
+    svg?: string;
     title: string;
 }
 

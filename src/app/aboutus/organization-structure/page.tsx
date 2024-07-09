@@ -16,7 +16,7 @@ export default function OrganizationStructure() {
                 组织架构
             </h1>
 
-            <p className={cn("md:text-2xl max-w-4xl text-3xl m-4 text-white relative z-20")}>
+            <p className={cn("md:text-2xl max-w-5xl text-3xl m-4 text-white relative z-20")}>
                 温肯科协是一个致力于<Highlight delay={0} duration={0.5}>促进科学研究与学术探索</Highlight>的组织。协会由主席团，行政部以及学术部组成
             </p>
 

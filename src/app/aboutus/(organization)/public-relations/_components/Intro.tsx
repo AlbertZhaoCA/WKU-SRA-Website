@@ -1,4 +1,4 @@
-import Modal from "@/components/ui/pop-up-pic-modal"
+import Modal from "@/components/picture-pop-up"
 
 export default function Intro() {
     return(

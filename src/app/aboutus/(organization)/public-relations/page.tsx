@@ -4,7 +4,7 @@ import LightProfile from '@/components/ui/light-profile';
 import svgArray from './_datas/svg';
 import Intro from './_components/Intro';
 import { useState } from 'react';
-import Modal from '@/components/ui/pop-up-pic-modal';
+import Modal from '@/components/picture-pop-up';
 import wePic from './_datas/wechat-qr-code.jpg';
 
 export default function Page() {

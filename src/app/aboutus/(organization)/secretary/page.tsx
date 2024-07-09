@@ -2,7 +2,7 @@
 import LightProfile from "@/components/ui/light-profile";
 import avatarImg from "./_datas/avatar.png";
 import { useState } from 'react';
-import Modal from "@/components/ui/pop-up-pic-modal";
+import Modal from "@/components/picture-pop-up";
 import contact from "./_datas/contact.jpg";
 import svgArray from "./_datas/svg";
 

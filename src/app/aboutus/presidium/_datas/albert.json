@@ -5,7 +5,6 @@
     "contactInfo": [{
         "name": "wechat",
         "url": "/wechat/albert",
-        "svgPath": "/wechat.svg",
         "title": "wechat"
     }],
     "researchInterests": ["语音学分析", "人工智能", "UX", "用户行为分析"],
