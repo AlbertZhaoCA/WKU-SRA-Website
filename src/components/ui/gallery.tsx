@@ -1,5 +1,5 @@
-import { GalleryProps } from "@/utils/type";
-
+import { GalleryProps } from "@/utils/types";
+ 
 export default function Gallery({params}: {params: GalleryProps}) {
 
     if (params.action?.type === "bigGrid") {
