@@ -9,6 +9,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ imageUrl, isOpen, setOpen }) => {
     
   const closeModal = () => {
+    console.log('bye');
     setOpen(false); 
   };
 

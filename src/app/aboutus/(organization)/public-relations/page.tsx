@@ -15,7 +15,7 @@ export default function Page() {
       };
     return (
         <div>
-            <LightProfile onChildClick={handleChildClick} avatar={avatarImg} person={{name: "滕炫宇（Angela）", intro: "27级 数学与应用数学", contact: "WeChat: qwo1k-mm",media:svgArray}} />
+            <LightProfile onChildClick={[handleChildClick]} avatar={avatarImg} person={{name: "滕炫宇（Angela）", intro: "27级 数学与应用数学", contact: "WeChat: qwo1k-mm",media:svgArray}} />
             {
             clicked ? <Modal isOpen={clicked} setOpen={handleChildClick} imageUrl={wePic.src} /> : null}
             <Intro/>        

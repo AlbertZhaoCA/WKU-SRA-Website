@@ -41,7 +41,7 @@ export const projects = [
   {
     title: "策划部",
     description:
-      "策划组织科协活动",
+      "策划部以服务学生、丰富校园文化生活",
     link: "/aboutus/planning",
   },
   {

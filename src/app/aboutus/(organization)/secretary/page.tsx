@@ -16,7 +16,7 @@ export default function Page() {
       };
     
 return (<div>
-    <LightProfile onChildClick={handleChildClick} avatar={avatarImg} person={{ name: "余益多", intro: "27级 计算机科学与技术", contact: "WeChat: imyyid",media:svgArray }} />
+    <LightProfile onChildClick={[handleChildClick]} avatar={avatarImg} person={{ name: "余益多", intro: "27级 计算机科学与技术", contact: "WeChat: imyyid",media:svgArray }} />
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
     <p className="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">欢迎来到
         <span className="border-b border-dotted border-slate-300">秘书部</span>

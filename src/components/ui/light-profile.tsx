@@ -7,7 +7,7 @@ type SVGComponentType = React.FC<React.SVGProps<SVGSVGElement>>;
 export default function LightProfile({avatar,person,onChildClick}: {
     avatar: StaticImageData,
      person: {name: string, intro: string, contact?: string, media?: SVGComponentType[],},
-     onChildClick?: () => void}){
+     onChildClick?:(() => void)[]}){
     
     return (
         <div className="dark:bg-slate-800 m-4 gap-6 flex items-center justify-center">
@@ -29,10 +29,13 @@ export default function LightProfile({avatar,person,onChildClick}: {
                     </div>
                 </div>
                 <div className="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-100 dark:bg-gray-100 right-1 rounded-lg">
-                    <div onClick={()=>{
-                        onChildClick && onChildClick() 
-                    }}  className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                    {person.media?.map((MediaComponent, index) => <MediaComponent key={index} />)}
+                    <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
+                    {person.media?.map((MediaComponent, index) => 
+                    <div key={index} onClick={()=>onChildClick&&onChildClick[index]()}>
+                    <MediaComponent key={index} />
+                    </div>
+                )
+                    }
                     </div>
                 </div>
             </div>
