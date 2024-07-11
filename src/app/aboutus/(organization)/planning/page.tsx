@@ -4,7 +4,7 @@ import avatarImg from "./_datas/avatar.png";
 import { useState } from 'react';
 import contact from "./_datas/contact.png";
 import Modal from "@/components/picture-pop-up";
-import svgArray from "./_datas/svg";
+import {svgArray} from "./_datas/svg";
 import qq from "./_datas/qq.png";
 
 //it is a bad code cause I used this logic also in other pages, rewrite when I have time (strange to use I, and I also do not 
