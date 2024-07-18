@@ -26,7 +26,7 @@ const Modal: React.FC<ModalProps> = ({Component,isOpen,setOpen }) => {
           >
             <span className="absolute top-0 right-0 cursor-pointer p-2" onClick={closeModal}>
               <svg
-                className="w-6 h-6 text-gray-700"
+                className="w-6 h-6 text-red-700"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

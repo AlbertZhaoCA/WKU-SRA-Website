@@ -10,6 +10,7 @@ import {
     TextRevealCardTitle,
 } from "@/components/ui/text-reveal-card";
 import { Boxes } from '@/components/ui/background-box';
+import Image from 'next/image';
 
 export default function Page() {
     return (
@@ -18,11 +19,10 @@ export default function Page() {
             <Boxes />
             <div className="flex flex-col md:items-baseline items-center md:flex-row  justify-around mx-auto px-10 py-12">
                 <BackgroundGradient className="rounded-[22px]  max-w-sm p-2 md:p-1 sm:p-5 bg-white dark:bg-zinc-900">
-                    <Card className="bg-slate-100  shadow-lg rounded-lg overflow-hidden">
                         <CardHeader className="flex items-center space-x-4 p-5 border-b">
                             <Avatar>
-                                <AvatarImage src={avatarImg.src} alt="Ethan" className="w-12 h-12 rounded-full" />
-                                <AvatarFallback>马</AvatarFallback>
+                                <AvatarImage src={avatarImg.src} alt="Ethan" className="w-24 h-24 rounded-full" />
+                                <AvatarFallback>马文轩</AvatarFallback>
                             </Avatar>
                             <span className="font-semibold text-lg"></span>
                         </CardHeader>
@@ -38,14 +38,14 @@ export default function Page() {
                         </CardContent>
                         <CardFooter className="p-5 border-t">
                             <a href="https://blog.csdn.net/weixin_74241638?spm=1000.2115.3001.5343" target="CSDN" rel="noopener noreferrer">
-                                <img className="w-12 h-6" src='/CSDN_Logo.svg.png'></img></a>
+                                <Image width={48} height={30} alt='csdn' src='/CSDN_Logo.svg.png'></Image></a>
                         </CardFooter>
-                    </Card>
                 </BackgroundGradient >
                 <div className="flex items-center justify-center">
                     <TextRevealCard
                         revealText="Starts Here"
                         text="Future of business innovation "
+                        
                     >
                         <TextRevealCardTitle>
                         加入商科学术部，开启你的数据之旅！
@@ -60,7 +60,7 @@ export default function Page() {
        <p>🏆 参加比赛，展现你的才华！ 商科学术部是展示你才华的舞台。无论是校内的商科竞赛还是国际建模大赛，我们都将为你提供支持，让你的才能得到认可。</p> 
 
        <p>🌟 加入我们，让未来不再遥远！ 别让你的潜力只停留在想象中。加入商科学术部，让我们一起将梦想变为现实，让未来触手可及！</p> 
-    </TextRevealCardDescription>
+     </TextRevealCardDescription>
                     </TextRevealCard>
 
                 </div>

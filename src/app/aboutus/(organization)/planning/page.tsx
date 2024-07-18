@@ -23,7 +23,7 @@ export default function Page() {
     
 return (
 <div>
-    <LightProfile onChildClick={[handleChildClick, handleQQChildClick]} avatar={avatarImg} person={{ name: "陈嘉悦 (Cynthia)", intro: "27级 金融学", contact: "WeChat: imyyid",media:svgArray }} />
+    <LightProfile onChildClick={[handleChildClick, handleQQChildClick]} avatar={avatarImg} person={{ name: "陈嘉悦 (Cynthia)", intro: "27级 金融学", contact: "WeChat 与 QQ",media:svgArray }} />
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  pb-16 text-center lg:pt-10">
   
 
@@ -46,10 +46,10 @@ return (
         <span className="inline-block"></span>
     </p>
     {
-    clicked ? <Modal isOpen={clicked} setOpen={handleChildClick} imageUrl={contact.src} /> : null
+    clicked ? <Modal width={avatarImg.width} height={avatarImg.height} isOpen={clicked} setOpen={handleChildClick} imageUrl={contact.src} /> : null
     }
     {
-    qqClicked ? <Modal isOpen={qqClicked} setOpen={handleQQChildClick} imageUrl={qq.src}  /> : null
+    qqClicked ? <Modal width={avatarImg.width} height={avatarImg.height} isOpen={qqClicked} setOpen={handleQQChildClick} imageUrl={qq.src}  /> : null
     }
 
 

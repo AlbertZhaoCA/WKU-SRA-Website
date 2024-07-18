@@ -13,7 +13,7 @@ export default function AboutUs() {
                 {content.map((item, index) => (
                     <div key={`content-${index}`} className="mb-10">
                         <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-                            {item.badge}
+                            {item!.badge}
                         </h2>
 
 
@@ -22,12 +22,12 @@ export default function AboutUs() {
                                 <Image
                                     src={item.image}
                                     alt="blog thumbnail"
-                                    height="1000"
-                                    width="1000"
+                                    height="800"
+                                    width="800"
                                     className="rounded-lg mb-10 object-cover"
                                 />
                             )}
-                            {item.description}
+                            {item!.description}
                         </div>
                     </div>
                 ))}
@@ -87,13 +87,29 @@ const content = [
         description: (
             <>
                 <p>
-                </p>
-                <p>
+                    我们组织了青科会志愿者面试，参与并协调青科会的各项工作
                 </p>
             </>
         ),
         badge: "世界青年科学家峰会",
         image:"/teenager-sci.jpg"
+    },
+    , {
+        description: (
+            <>
+                <p>
+                   我们有幸邀请到了科协前副主席，俩个月雅思首八的学姐，为大家带来雅思备考经验，也邀请到了UCL和Uchicago的学长学姐，
+                   为大家带来留学经验分享，日常也会有学术部优秀的学长学姐为大家带来有趣的labs
+                </p>
+            </>
+        ),
+        badge: "学长学姐留学雅思分享会，labs等",
+        image:"/studyabroad.jpg"
+    },
+    , {
+       
+        badge: "剩下的故事由你书写",
+        image:"/tbc.png"
     },
 
 ];

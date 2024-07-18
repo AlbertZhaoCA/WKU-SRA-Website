@@ -1,12 +1,15 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ModalProps {
   imageUrl: string;
   isOpen: boolean; 
   setOpen: (isOpen: boolean) => void; 
+  width: number;
+  height: number;
 }
 
-const Modal: React.FC<ModalProps> = ({ imageUrl, isOpen, setOpen }) => {
+const Modal: React.FC<ModalProps> = ({width,height,imageUrl, isOpen, setOpen }) => {
     
   const closeModal = () => {
     console.log('bye');
@@ -35,7 +38,7 @@ const Modal: React.FC<ModalProps> = ({ imageUrl, isOpen, setOpen }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </span>
-            <img src={imageUrl} alt="Image" className="w-full h-auto rounded-lg" />
+            <Image src={imageUrl} width={width} height={height} alt="Image" className="w-full h-auto rounded-lg" />
           </div>
         </div>
       )}

@@ -8,7 +8,7 @@ export default function HeaderLogo() {
                 <img src="/wku-favicon.png" alt="WKU Logo" className="h-12 w-12" />
             </div>
             <Link href="/" passHref>
-                <h1 className="cursor-pointer m-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                <h1 className="cursor-pointer m-4 text-4xl text-center sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
                     温州肯恩大学科技科研协会
                 </h1>
             </Link>

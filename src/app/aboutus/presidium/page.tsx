@@ -2,8 +2,11 @@ import HeavyProfile from "@/components/ui/heavy-profile";
 import albert from './_datas/albert.json';
 import  yifei from './_datas/yifei.json';
 import wennedy from './_datas/wennedy.json';
+import ComingSoon from "@/components/coming-soon";
+
 
 import { heavyProfileProps } from "@/utils/types";
+import { redirect } from "next/navigation";
 
 const AL: heavyProfileProps = {
   ...albert,
@@ -21,12 +24,14 @@ const YI: heavyProfileProps = {
   };
 
 export default function Page() {
+
     
     return (
-    <div>
-        <HeavyProfile {...AL} />
-        <HeavyProfile {...YI} />
-        <HeavyProfile {...WE} />
-    </div>
+    <ComingSoon />
+    // <div>
+    //     <HeavyProfile {...AL} />
+    //     <HeavyProfile {...YI} />
+    //     <HeavyProfile {...WE} />
+    // </div>
     );
 };

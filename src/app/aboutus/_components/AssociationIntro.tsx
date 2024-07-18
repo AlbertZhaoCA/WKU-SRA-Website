@@ -5,6 +5,7 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 export default function AssociationIntro() {
   return <HeroParallax products={list} />;
 }
+
 export const list = [
   {
     title: "科技家乡之旅",

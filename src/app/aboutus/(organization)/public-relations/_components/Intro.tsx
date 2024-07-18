@@ -5,8 +5,8 @@ export default function Intro() {
     <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-10 mb-10">
         <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">📨 沟通与交流</h2>
         <p className="mb-12 text-lg text-gray-500">欢迎加入科技科研协会公关部，开启你的沟通与交流之旅！
-
         </p>
+
         <div className="w-full">
             <div className="flex flex-col w-full mb-10 sm:flex-row">
                 <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
@@ -50,6 +50,7 @@ export default function Intro() {
                         </div>
                     </div>
                 </div>
+                <div className="w-full sm:w-1/2">
           
                     <div className="relative h-full ml-0 md:mr-10">
                         <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
@@ -61,6 +62,7 @@ export default function Intro() {
                             <p className="mb-2 text-gray-600">公关部，我们不仅是传播信息，更是科技与创新的使者。通过多样化的宣传渠道和创新的传播策略，我们将科研成果和活动的消息传递给更多人，让更多人了解并参与到我们的科技世界中来！</p>
                         </div>
                     </div>
+                </div>
                 
             </div>
         </div>

@@ -36,7 +36,7 @@ return (<div>
         <span className="inline-block"></span>
     </p>
     {
-    clicked ? <Modal isOpen={clicked} setOpen={handleChildClick} imageUrl={contact.src} /> : null
+    clicked ? <Modal isOpen={clicked} width={avatarImg.width} height={avatarImg.height} setOpen={handleChildClick} imageUrl={contact.src} /> : null
     }
 
 
