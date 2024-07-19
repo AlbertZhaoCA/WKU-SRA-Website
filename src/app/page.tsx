@@ -1,19 +1,24 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import Intro from "@/components/HomeIntro";
- 
+import Intro from "./_components/HomeIntro";
+import Group from "./_components/GroupModal";
+
 export default function Home() {
   return (
-    <div className="minh-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="max-w-2xl mx-auto p-4">
-        <h1 className="relative z-0 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
-        科技·创新·未来 <br/>
-        Science·Innovation
+    <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center antialiased">
+      <div className="max-w-4xl mt-8 mx-auto p-4 ">
+        <h1 className="relative z-0 sm:text-5xl text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b text-center font-sans font-bold fallback-text-color">
+          科技·创新·未来 <br />
+          Science·Innovation
         </h1>
         <Intro />
+     
       </div>
       <BackgroundBeams />
+
+      <Group />
+
     </div>
   );
 }

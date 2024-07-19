@@ -1,0 +1,24 @@
+{
+    "name": "Albert",
+    "url": "https://www.wku.edu.cn/",
+    "majorInfo": ["大三计算机", "WKU"],
+    "contactInfo": [{
+        "name": "wechat",
+        "url": "/wechat/albert",
+        "title": "wechat"
+    }],
+    "researchInterests": ["语音学分析", "人工智能", "UX", "用户行为分析"],
+    "projects": ["语音识别", "人工智能", "UX", "用户行为分析"],
+    "quote": "Let there be light!",
+    "shortBio": [
+        {
+            "title": "希望从事软件开发相关行业的cs学习者 📚",
+            "content": "对软件工程，计算机充满了好奇，始终愿意尝试新事物，提升自己的技术水平。😫。"
+        },
+        {
+            "title": "自然语言处理类中语音学分析关注者 👀",
+            "content": "对自然语言处理类中的语音学分析感兴趣，持续关注着开源社区里好用的语音学分析模型的分布 (为什么做这个方向开源的人不多啊，孩子只是买不起API啊😭)"
+        }
+       
+    ]
+}
