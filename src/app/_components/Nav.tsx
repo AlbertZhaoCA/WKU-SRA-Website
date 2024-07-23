@@ -32,6 +32,11 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/aboutus/activities",
     description:
       "科协举办承办活动",
+  },{
+    title: "未来规划",
+    href: "/future",
+    description:
+      "科协新学年规划",
   },
 ]
 
@@ -88,9 +93,9 @@ export function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/future" legacyBehavior passHref>
+          <Link href="https://wiki.wkusci.com" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            未来规划
+              科协飞跃手册
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
