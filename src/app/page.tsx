@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Intro from "./_components/HomeIntro";
 import Group from "./_components/GroupModal";
 
 export default function Home() {
+
   return (
     <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center antialiased">
       <div className="max-w-4xl mt-8 mx-auto p-4 ">

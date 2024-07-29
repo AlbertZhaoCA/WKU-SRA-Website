@@ -42,10 +42,10 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
-    <div className="flex  w-full justify-center">
-    <NavigationMenu>
+    <div className="flex w-full justify-center">
+    <NavigationMenu className="w-full">
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="w-[80px] sm:w-[120px] md:w-[140px] lg:w-[200px]">
           <NavigationMenuTrigger>所属机构</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -75,10 +75,11 @@ export function NavigationBar() {
              
             </ul>
           </NavigationMenuContent>
+
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="w-[80px] sm:w-[120px] md:w-[140px] lg:w-[200px]">
           <NavigationMenuTrigger>关于我们</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent >
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
@@ -92,14 +93,14 @@ export function NavigationBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="w-[100px] sm:w-[140px] md:w-[160px] lg:w-[220px]">
           <Link href="https://wiki.wkusci.com" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               科协飞跃手册
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="w-[90px] sm:w-[140px] md:w-[160px] lg:w-[220px]">
           <Link href="/contactus" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
             联系我们
